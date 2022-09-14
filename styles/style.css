@@ -62,16 +62,38 @@ footer {
 
 .hero {
   padding-top: 60px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media screen and (min-width: 992px) {
+  .hero {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 .hero img {
   display: block;
 }
 .hero h1 {
   color: white;
-  font-size: 80px;
+  font-size: 40px;
+  text-align: center;
+}
+@media screen and (min-width: 992px) {
+  .hero h1 {
+    font-size: 80px;
+    text-align: left;
+  }
 }
 .hero h3 {
-  font-size: 40px;
+  font-size: 35px;
+  text-align: center;
+}
+@media screen and (min-width: 992px) {
+  .hero h3 {
+    text-align: left;
+    font-size: 40px;
+  }
 }
 
 .hero-container {
@@ -91,6 +113,17 @@ footer {
   justify-content: center;
   padding-bottom: 0;
 }
+.hero-container .hero-btns {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 992px) {
+  .hero-container .hero-btns {
+    justify-content: left;
+    margin-bottom: 0;
+  }
+}
 .hero-container .hero-btns a {
   background: rgba(92, 78, 78, 0.8117647059);
   color: white;
@@ -107,7 +140,16 @@ footer {
   padding-top: 90px;
   padding-bottom: 60px;
   margin: 0 auto;
-  align-items: center;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 992px) {
+  .about {
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 .about h2 {
   color: #222222;
@@ -126,7 +168,17 @@ footer {
 }
 .about .about-image-container .coding {
   height: auto;
-  width: 400px;
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .about .about-image-container .coding {
+    width: 400px;
+  }
+}
+.about .column:last-child {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .project-container {
@@ -138,6 +190,14 @@ footer {
 }
 .project-container .project {
   padding-top: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 992px) {
+  .project-container .project {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 .project-container h2 {
   text-align: center;
@@ -240,11 +300,25 @@ footer {
   font-size: 50px;
   color: #222222;
   padding-bottom: 50px;
+  text-align: center;
+}
+@media screen and (min-width: 992px) {
+  .contact-container h2 {
+    text-align: left;
+  }
 }
 .contact-container .contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media only screen and (min-width: 992px) {
+  .contact-container .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 .contact-container .contact .column:last-child {
   display: flex;
@@ -253,6 +327,7 @@ footer {
 .contact-container .info-container {
   display: flex;
   flex-direction: column;
+  align-items: left;
 }
 .contact-container .info-container .icon {
   margin-bottom: 20px;
@@ -269,7 +344,12 @@ footer {
 }
 .contact-container .talk {
   height: auto;
-  width: 400px;
+  width: 100%;
+}
+@media only screen and (min-width: 992px) {
+  .contact-container .talk {
+    width: 400px;
+  }
 }
 
 footer {
@@ -278,15 +358,32 @@ footer {
   text-align: center;
 }
 footer p {
-  text-align: left;
+  text-align: center;
+}
+@media only screen and (min-width: 992px) {
+  footer p {
+    text-align: left;
+  }
 }
 footer .icon i {
   font-size: 20px;
 }
 footer .columns .column:last-child {
   display: flex;
-  justify-content: right;
+  justify-content: center;
+}
+@media only screen and (min-width: 992px) {
+  footer .columns .column:last-child {
+    justify-content: right;
+  }
 }
 footer .columns .column:last-child .icon:first-child {
   margin-right: 8px;
+}
+footer a {
+  color: #d1d0d0;
+  line-height: 16px;
+}
+footer a:hover {
+  color: #d1d0d0;
 }/*# sourceMappingURL=style.css.map */
