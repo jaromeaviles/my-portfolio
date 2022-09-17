@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 *,
 *::before,
 *::after {
@@ -16,7 +20,6 @@ h6 {
 body {
   height: 100%;
   font-family: "Raleway", sans-serif;
-  scroll-behavior: smooth;
   margin: 0;
   color: #222222;
 }
@@ -38,6 +41,15 @@ footer {
   background-image: url(../../assets/img/textures.png);
 }
 
+@media screen and (min-width: 992px) {
+  .wrapper.nav-wrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+}
+
 .square-wrapper {
   background-image: url("../../assets/img/square.png");
 }
@@ -51,13 +63,19 @@ footer {
   font-size: 18px;
   font-weight: bold;
 }
-.navbar .navbar-item:hover {
+.navbar .navbar-item:hover, .navbar .navbar-item:focus {
   color: white;
   background-color: #222222;
 }
 .navbar .navbar-item img {
   width: 50px;
   max-height: 50px;
+}
+.navbar .navbar-burger {
+  color: #d1d0d0;
+}
+.navbar .navbar-menu.is-active {
+  background-image: url(../../assets/img/textures.png);
 }
 
 .hero {
@@ -99,6 +117,11 @@ footer {
 .hero-container {
   margin-bottom: 0 !important;
 }
+@media screen and (min-width: 992px) {
+  .hero-container {
+    margin-top: 60px;
+  }
+}
 .hero-container .hero-text {
   display: flex;
   justify-content: center;
@@ -136,6 +159,10 @@ footer {
   background: #5c4e4e;
 }
 
+section {
+  scroll-margin-top: 64px;
+}
+
 .about {
   padding-top: 90px;
   padding-bottom: 60px;
@@ -163,7 +190,6 @@ footer {
 }
 .about .about-image-container {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 .about .about-image-container .coding {
@@ -299,11 +325,21 @@ footer {
 .contact-container h2 {
   font-size: 50px;
   color: #222222;
-  padding-bottom: 50px;
   text-align: center;
+  line-height: 50px;
+  margin-bottom: 16px;
 }
 @media screen and (min-width: 992px) {
   .contact-container h2 {
+    text-align: left;
+  }
+}
+.contact-container p {
+  margin-bottom: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 992px) {
+  .contact-container p {
     text-align: left;
   }
 }
@@ -314,7 +350,7 @@ footer {
 @media only screen and (min-width: 992px) {
   .contact-container .contact {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding-left: 0;
     padding-right: 0;
@@ -323,6 +359,14 @@ footer {
 .contact-container .contact .column:last-child {
   display: flex;
   justify-content: center;
+}
+.contact-container .contact br {
+  display: none;
+}
+@media only screen and (min-width: 992px) {
+  .contact-container .contact br {
+    display: block;
+  }
 }
 .contact-container .info-container {
   display: flex;

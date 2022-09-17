@@ -10,6 +10,10 @@
 
     <title>Jarome Aviles - Software Engineer</title>
 
+    <!-- Import Favicon -->
+
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon1.ico">
+
     <!-- Imports Bulma CSS -->
 
     <link
@@ -42,7 +46,7 @@
 
   <body>
     <!-- navbar -->
-    <div class="wrapper">
+    <div class="wrapper nav-wrapper">
       <nav
         class="navbar container"
         role="navigation"
@@ -68,10 +72,10 @@
 
         <div id="navbarBasicExample" class="navbar-menu">
           <div class="navbar-end">
-            <a class="navbar-item"> Home </a>
-            <a class="navbar-item"> About </a>
-            <a class="navbar-item"> Projects </a>
-            <a class="navbar-item"> Contact </a>
+            <a class="navbar-item" href="#"> Home </a>
+            <a class="navbar-item" href="#about"> About </a>
+            <a class="navbar-item" href="#projects"> Projects </a>
+            <a class="navbar-item" href="#contact"> Contact </a>
           </div>
         </div>
       </nav>
@@ -97,7 +101,7 @@
       </div>
 
       <!-- About -->
-      <section class="about-section container-fluid">
+      <section id="about" class="about-section container-fluid">
         <div class="columns about container">
           <div class="column is-6 about-image-container">
             <img src="./assets/img/coding.svg" alt="coding" class="coding" />
@@ -105,17 +109,16 @@
           <div class="column is-6">
             <h2>About</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Graduated at coding bootcamp in 2018 and started working as a web developer
+              in 2019 to 2020. In 2020, I started working as a software engineer with 2 yrs 
+              frontend development working experience.
             </p>
           </div>
         </div>
       </section>
 
       <!-- projects -->
-      <section class="project-container container-fluid">
+      <section id="projects" class="project-container container-fluid">
         <svg
           class="separator"
           width="100%"
@@ -370,10 +373,12 @@
 
       <!-- Contact -->
       <div class="square-wrapper">
-        <section class="contact-container container">
+        <section id="contact" class="contact-container container">
           <div class="columns contact">
             <div class="column is-6 is-desktop">
               <h2>Contact</h2>
+              <p>I'm seeking out opportunities to work with company, <br />Feel free to reach out to me through
+                these platforms below.</p>
               <div class="info-container">
                 <!-- email -->
                 

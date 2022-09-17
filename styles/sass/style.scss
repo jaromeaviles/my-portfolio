@@ -1,5 +1,9 @@
 @import "./variables.scss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 *,
 *::before,
 *::after {
@@ -18,7 +22,6 @@ h6 {
 body {
   height: 100%;
   font-family: "Raleway", sans-serif;
-  scroll-behavior: smooth;
   margin: 0;
   color: $black;
 
@@ -41,6 +44,17 @@ footer {
   background-image: url(../../assets/img/textures.png);
 }
 
+.wrapper {
+  &.nav-wrapper {
+    @media screen and (min-width: 992px) {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+    }
+  }
+}
+
 .square-wrapper {
   background-image: url("../../assets/img/square.png");
 }
@@ -53,7 +67,8 @@ footer {
     font-size: 18px;
     font-weight: bold;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: white;
       background-color: $black;
     }
@@ -61,6 +76,15 @@ footer {
     img {
       width: 50px;
       max-height: 50px;
+    }
+  }
+  .navbar-burger {
+    color: $pewter;
+  }
+
+  .navbar-menu {
+    &.is-active {
+      background-image: url(../../assets/img/textures.png);
     }
   }
 }
@@ -99,6 +123,9 @@ footer {
 
 .hero-container {
   margin-bottom: 0 !important;
+  @media screen and (min-width: 992px) {
+    margin-top: 60px;
+  }
   .hero-text {
     display: flex;
     justify-content: center;
@@ -138,6 +165,10 @@ footer {
 
 // about
 
+section {
+  scroll-margin-top: 64px;
+}
+
 .about {
   padding-top: 90px;
   padding-bottom: 60px;
@@ -162,7 +193,7 @@ footer {
   }
   .about-image-container {
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
     .coding {
       height: auto;
@@ -300,7 +331,16 @@ footer {
   h2 {
     font-size: 50px;
     color: $black;
-    padding-bottom: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 16px;
+    @media screen and (min-width: 992px) {
+      text-align: left;
+    }
+  }
+
+  p {
+    margin-bottom: 20px;
     text-align: center;
     @media screen and (min-width: 992px) {
       text-align: left;
@@ -312,7 +352,7 @@ footer {
     padding-right: 15px;
     @media only screen and (min-width: 992px) {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       padding-left: 0;
       padding-right: 0;
@@ -322,6 +362,13 @@ footer {
       &:last-child {
         display: flex;
         justify-content: center;
+      }
+    }
+
+    br {
+      display: none;
+      @media only screen and (min-width: 992px) {
+        display: block;
       }
     }
   }
