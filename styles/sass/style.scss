@@ -41,7 +41,7 @@ button {
 .wrapper,
 .project-container,
 footer {
-  background-image: url(../../assets/img/textures.png);
+  background-image: url(../assets/img/textures.png);
 }
 
 .wrapper {
@@ -56,7 +56,7 @@ footer {
 }
 
 .square-wrapper {
-  background-image: url("../../assets/img/square.png");
+  background-image: url("../assets/img/square.png");
 }
 
 .navbar {
@@ -84,7 +84,7 @@ footer {
 
   .navbar-menu {
     &.is-active {
-      background-image: url(../../assets/img/textures.png);
+      background-image: url(../assets/img/textures.png);
     }
   }
 }
