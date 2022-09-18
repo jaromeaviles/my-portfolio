@@ -10,6 +10,8 @@ Html, Bulma CSS Framework, Vanilla JS
 
 - Resettings columns margins
 - removed paddings
+- added links for projects
+- updated favicon
 
 #### Update 1.2 09/17/2022
 

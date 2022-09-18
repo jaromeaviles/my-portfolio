@@ -269,7 +269,7 @@ section {
   align-items: center;
 }
 .project-container .card .descriptions .icon {
-  margin-left: 5px !important;
+  margin-left: 2px !important;
 }
 .project-container .card:hover .descriptions {
   left: 0px;
