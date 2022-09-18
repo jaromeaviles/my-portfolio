@@ -12,6 +12,7 @@ Html, Bulma CSS Framework, Vanilla JS
 - removed paddings
 - added links for projects
 - updated favicon
+- updated resume
 
 ##### Update 1.2 09/17/2022
 
