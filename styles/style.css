@@ -31,6 +31,11 @@ button {
   font-family: "Raleway", sans-serif;
 }
 
+.columns {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .container-fluid {
   width: 100%;
 }
@@ -80,8 +85,6 @@ footer {
 
 .hero {
   padding-top: 60px;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 @media screen and (min-width: 992px) {
   .hero {
@@ -168,8 +171,6 @@ section {
   padding-bottom: 60px;
   margin: 0 auto;
   text-align: center;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 @media screen and (min-width: 992px) {
   .about {
@@ -216,8 +217,6 @@ section {
 }
 .project-container .project {
   padding-top: 60px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 @media screen and (min-width: 992px) {
   .project-container .project {

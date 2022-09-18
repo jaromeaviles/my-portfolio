@@ -6,6 +6,11 @@ Portfolio Redesign 2022
 
 Html, Bulma CSS Framework, Vanilla JS
 
+#### Update 1.4 09/18/2022
+
+- Resettings columns margins
+- removed paddings
+
 #### Update 1.2 09/17/2022
 
 - Navigation Menu link added
