@@ -49,17 +49,6 @@ footer {
   background-image: url(../assets/img/textures.png);
 }
 
-.wrapper {
-  &.nav-wrapper {
-    @media screen and (min-width: 992px) {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1;
-    }
-  }
-}
-
 .square-wrapper {
   background-image: url("../assets/img/square.png");
 }
@@ -126,9 +115,6 @@ footer {
 
 .hero-container {
   margin-bottom: 0 !important;
-  @media screen and (min-width: 992px) {
-    margin-top: 60px;
-  }
   .hero-text {
     display: flex;
     justify-content: center;
@@ -194,7 +180,6 @@ section {
   }
   .about-image-container {
     display: flex;
-    // justify-content: center;
     align-items: center;
     .coding {
       height: auto;

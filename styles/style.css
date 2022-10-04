@@ -46,15 +46,6 @@ footer {
   background-image: url(../assets/img/textures.png);
 }
 
-@media screen and (min-width: 992px) {
-  .wrapper.nav-wrapper {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-  }
-}
-
 .square-wrapper {
   background-image: url("../assets/img/square.png");
 }
@@ -119,11 +110,6 @@ footer {
 
 .hero-container {
   margin-bottom: 0 !important;
-}
-@media screen and (min-width: 992px) {
-  .hero-container {
-    margin-top: 60px;
-  }
 }
 .hero-container .hero-text {
   display: flex;

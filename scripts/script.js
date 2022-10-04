@@ -21,3 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   
   });
+
+  // animations
+
+  gsap.from('.hero-text h1', {duration: 2, y: '50%', ease: 'power1.out'});
+  gsap.from('.hero-text h3', {duration: 2, opacity: 0, delay: 2});
+  gsap.from('.hero-btns', {duration: 2, opacity: 0, delay: 3});
