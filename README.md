@@ -6,6 +6,10 @@ Portfolio Redesign 2022
 
 Html, Bulma CSS Framework, Vanilla JS
 
+##### Update 1.9 11.4.2022
+
+- localized bulma css
+
 ##### Update 1.7 10.4.2022
 
 - Animations on Hero added
