@@ -6,6 +6,10 @@ Portfolio Redesign 2022
 
 Html, Bulma CSS Framework, Vanilla JS
 
+##### Update 1.9 11.5.2022
+
+- Big update on resume
+
 ##### Update 1.9 11.4.2022
 
 - localized bulma css
